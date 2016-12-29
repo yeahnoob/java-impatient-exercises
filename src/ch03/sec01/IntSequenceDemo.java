@@ -7,11 +7,11 @@ public class IntSequenceDemo {
     public static double average(IntSequence seq, int n) {
         int count = 0;
         double sum = 0;
-        while(seq.hasNext() && count < n) {
+        while (seq.hasNext() && count < n) {
             count++;
             sum += seq.next();
         }
-        return count == 0 ? 0 : sum/count;
+        return count == 0 ? 0 : sum / count;
     }
 
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class IntSequenceDemo {
         System.out.println("Average of first 100 squares: " + avg);
 
         IntSequence digits = new DigitSequence(1729);
-        while(digits.hasNext()) System.out.print(digits.next() + " ");
+        while (digits.hasNext()) System.out.print(digits.next() + " ");
         System.out.println();
 
         digits = new DigitSequence(1729);

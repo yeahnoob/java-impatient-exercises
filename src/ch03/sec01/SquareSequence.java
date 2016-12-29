@@ -12,6 +12,6 @@ public class SquareSequence implements IntSequence {
 
     public int next() {
         i++;
-        return i*i;
+        return i * i;
     }
 }
